@@ -1,6 +1,5 @@
 import React from "react";
 import { render } from "react-dom";
-import Playground from "./components/Playground";
 
 /*
 💥💥💥 Rules when DECLARING a React component 💥💥💥
@@ -22,23 +21,15 @@ import Playground from "./components/Playground";
   - Don't forget all tags need to close correctly
 */
 
-function App(props) {
-  const { cohort, instructor, happy, week } = props;
-
+function App() {
   return (
     <div className="container">
-      <h1>Welcome to React, Web {cohort}</h1>
-      <div>{instructor} welcomes you 🥳</div>
-
-      {happy ? <div>Very happy</div> : <div>It is Monday</div>}
-      <div>It is week {week}</div>
-
-      <Playground cohort={cohort} />
+      <h1>Welcome to React, Web PT 24!</h1>
     </div>
   );
 }
 
 render(
-  <App cohort="38" instructor="Rhiannon" happy={true} week={2} />,
+  <App />,
   document.querySelector("#root")
 );

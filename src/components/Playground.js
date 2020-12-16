@@ -25,7 +25,7 @@ export function Playground() {
         return (
             <div className='container'>
                 <h3>the spinner is { spinnerOn ? 'ON' : 'OFF' }. Loading....</h3>
-                <button onClick={e => setSpinnerOn(false)}>turn off spinner</button>
+                <button onClick={e => setSpinnerOn(!spinnerOn)}>turn off spinner</button>
             </div>
         );
     }
@@ -41,6 +41,10 @@ export function Playground() {
 
             {/* implement an h3 that displays current weapon */}
             {/* implement three buttons that update the weapon to something different */}
+            <h3>Current weapon: {weapon}</h3>
+            <button onClick={e => setWeapon('scissors')}>change weapon to scissors</button>
+            <button onClick={e => setWeapon('rock')}>change weapon to rock</button>
+            <button onClick={e => setWeapon('paper')}>change weapon to paper</button>
         </div>
     );
 }

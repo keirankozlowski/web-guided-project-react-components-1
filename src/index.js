@@ -29,6 +29,7 @@ function App(props) {
 }
 
 render(
+  // App('webpt24', 'Keiran', 9001, 1)
   <App cohort='webpt24' instructor='Keiran' happinessLevel={9001} week={1} />,
   document.querySelector("#root")
 );

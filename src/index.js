@@ -16,7 +16,7 @@ import { Playground, Playplace } from './components/Playground';
 // don't forget tags
 function App(props) {
   const { cohort, instructor, happinessLevel, week } = props;
-  console.log(props);
+  // console.log(props);
 
   return (
     <div className="container">

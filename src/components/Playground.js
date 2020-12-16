@@ -9,6 +9,7 @@ export function Playground() {
     // syntax for useState hook
     const [count, setCount] = useState(0);
     const [spinnerOn, setSpinnerOn] = useState(true);
+    const [weapon, setWeapon] = useState('scissors');
     // const [object, setObject] = useState({});
     // console.log(object);
 
@@ -37,6 +38,9 @@ export function Playground() {
             <h3>The count is: {count}</h3>
             <button onClick={e => setCount(count + 1) }>increase count</button>
             <button onClick={e => setCount(count - 1) }>decrease count</button>
+
+            {/* implement an h3 that displays current weapon */}
+            {/* implement three buttons that update the weapon to something different */}
         </div>
     );
 }
